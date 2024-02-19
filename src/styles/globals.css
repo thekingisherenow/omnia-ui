@@ -1,0 +1,61 @@
+:root{
+  --w3m-color-fg-accent: #fecd35 !important;
+  /* --w3m-color-bg-2: #fecd35 !important; */
+  --swiper-scrollbar-drag-bg-color: #fecd35 !important;
+}
+
+@font-face {
+  font-family: 'VCROSD';
+  src: url('/fonts/VCROSD.ttf');
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  padding-right: 0px !important;; 
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+span {
+  font-family: 'VCROSD !important';
+}
+
+:host(span){
+  font-family: 'VCROSD !important';
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+.swiper-slide {
+  height: auto !important;
+  }
+
+.swiper-content {
+height: 100% !important
+}
